@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "824979358907",
+    "project_id": "cekjadwal-6b27f",
+    "storage_bucket": "cekjadwal-6b27f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824979358907:android:f0ac31fabc49c8beabd59e",
+        "android_client_info": {
+          "package_name": "com.example.cekjadwal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824979358907-575jhsoslob5ne8g9hjgh078d76p7d2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHNFyAKtPlU3m40Xhtc3h1PFFNOtEUcAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824979358907-575jhsoslob5ne8g9hjgh078d76p7d2f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

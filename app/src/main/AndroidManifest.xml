@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cekjadwal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_cek"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CekJadwal"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".classactivity.LoadRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".classactivity.CreateRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".classactivity.KodeRegistrasi"
+            android:exported="false" />
+        <activity android:name=".classactivity.RegisterActivity" />
+        <activity android:name=".classactivity.LoginActivity" />
+        <activity android:name=".classactivity.ActivityCek" />
+        <activity android:name=".classactivity.LayarUtama">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".classactivity.LihatList" />
+        <activity android:name=".classactivity.MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".classactivity.MainActivity">
+
+    <TextView
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:id="@+id/texttitle"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:text="Jadwal Kuliah"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/textinput_layout_main"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/texttitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="3dp"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/edit_text_background"
+            android:hint="Masukkan Nama"
+            android:id="@+id/edit_text_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <ScrollView
+        app:layout_goneMarginStart="5dp"
+        android:id="@+id/scrollViewmain"
+        android:layout_marginStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textinput_layout_main">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrainmain"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvmain1"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintTop_toTopOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SENIN" />
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/tvmain1"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lin_lay_senin_act_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/btn_senin"
+                android:layout_margin="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_add_jadwal"
+                android:onClick="onClick"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintTop_toBottomOf="@+id/lin_lay_senin_act_tambah" />
+
+            <TextView
+                android:id="@+id/tvmain2"
+                app:layout_constraintTop_toBottomOf="@+id/btn_senin"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELASA" />
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/tvmain2"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lin_lay_selasa_act_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/btn_selasa"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="onClick"
+                android:src="@drawable/icon_add_jadwal"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintTop_toBottomOf="@+id/lin_lay_selasa_act_tambah" />
+
+            <TextView
+                android:id="@+id/tvmain3"
+                app:layout_constraintTop_toBottomOf="@+id/btn_selasa"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RABU" />
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/tvmain3"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lin_lay_rabu_act_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/btn_rabu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="onClick"
+                android:src="@drawable/icon_add_jadwal"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintTop_toBottomOf="@+id/lin_lay_rabu_act_tambah" />
+
+            <TextView
+                android:id="@+id/tvmain4"
+                app:layout_constraintTop_toBottomOf="@+id/btn_rabu"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KAMIS" />
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/tvmain4"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lin_lay_kamis_act_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/btn_kamis"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="onClick"
+                android:src="@drawable/icon_add_jadwal"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintTop_toBottomOf="@+id/lin_lay_kamis_act_tambah" />
+
+            <TextView
+                android:id="@+id/tvmain5"
+                app:layout_constraintTop_toBottomOf="@+id/btn_kamis"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JUMAT" />
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/tvmain5"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lin_lay_jumat_act_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/btn_jumat"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="onClick"
+                android:src="@drawable/icon_add_jadwal"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintTop_toBottomOf="@+id/lin_lay_jumat_act_tambah" />
+
+            <TextView
+                android:id="@+id/tvmain6"
+                app:layout_constraintTop_toBottomOf="@+id/btn_jumat"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SABTU" />
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/tvmain6"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lin_lay_sabtu_act_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/btn_sabtu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="onClick"
+                android:src="@drawable/icon_add_jadwal"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintTop_toBottomOf="@+id/lin_lay_sabtu_act_tambah" />
+
+            <TextView
+                android:id="@+id/tvmain7"
+                app:layout_constraintTop_toBottomOf="@+id/btn_sabtu"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MINGGU" />
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/tvmain7"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lin_lay_minggu_act_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/btn_minggu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="onClick"
+                android:src="@drawable/icon_add_jadwal"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintTop_toBottomOf="@+id/lin_lay_minggu_act_tambah" />
+
+            <ImageView
+                app:layout_constraintTop_toBottomOf="@+id/btn_minggu"
+                app:layout_constraintStart_toStartOf="@+id/constrainmain"
+                app:layout_constraintEnd_toEndOf="@+id/constrainmain"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/icon_btn_submit"
+                android:layout_height="130dp"
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:onClick="onClick"
+                android:layout_marginBottom="20dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
